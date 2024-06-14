@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 80px; 
+    width: auto; 
+}
+
+.post {
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #000; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    text-align: center; 
+    font-weight: bold;
+    font-size: 20px; 
+    margin-bottom: 20px;
+}
+
+.regidate_box, .place_box, .reason_box, .image_box {
+    margin-bottom: 10px;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+input[type="text"], .input[type="date"], select, input[type="file"]{
+    flex-grow: 1;
+    width: 300px; 
+    height: 40px;
+    padding: 5px;
+    font-size: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.button-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 上は絶対にいじらない！！ */
+
+#list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#list li {
+    flex: 1 1 calc(20% - 10px); /* 基本幅を20%に設定し、gapを引く */
+    height: auto; /* 必要に応じて高さを設定 */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+#list li img{
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+#image_preview img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.pj-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.save {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}

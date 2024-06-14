@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- cssを導入 -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=xxxx&callback=initMap" async defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="image/burdies.png" alt="logo" id="logo">
+    </header>
+
+    <div class="post">
+        <div id="title">最新のお気に入り</div>
+        <div id="regidate_box">
+            <label for="regiDate">登録日</label>
+            <input type="date" id="regiDate" name="regiDate">
+        </div>
+
+        <div id="place_box">
+            <label for="place">おすすめスポット名</label>
+            <input type="text" id="place" placeholder="おすすめスポット名をご記入ください">
+        </div>
+            
+        <div id="reason_box">
+            <label for="reason">おすすめポイント</label>
+            <input type="text" id="reason" placeholder="おすすめポイントをご記入ください">
+        </div>
+        
+        <div id="image_box">
+            <label for="image">写真</label>
+            <input type="file" id="image" name="image" accept="image/*">
+        </div>
+
+        <div id="image_preview"></div>
+            
+        <div class="button-box">
+            <button id="save">登録</button>
+        </div>
+    </div>
+
+        <ul id="list">
+        </ul>
+
+    <div id="map"></div>
+
+</body>
+</html>
